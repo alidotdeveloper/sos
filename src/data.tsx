@@ -1,46 +1,75 @@
-interface menuItems {
-    menu: string;
-    link: string;
-}
-interface hero {
-    title: string;
-    subtitle: string;
-}
+import { Content } from "./types";
 
-interface Content {
-    menuItems: menuItems[];
-    hero: hero[];
-}
-
- const content: Content = {
-    menuItems: [
+const content: Content = {
+  menuItems: [
+    {
+      menu: "Home",
+      link: "/",
+    },
+    {
+      menu: "About Us",
+      link: "/about",
+    },
+    {
+      menu: "Features",
+      link: "/features",
+    },
+    {
+      menu: "Contact Us",
+      link: "/contact-us",
+    },
+  ],
+  Footer: [
+    {
+      title: "Index",
+      navitems: [
         {
-            menu: "Home",
-            link: "/"
+          title: "Home",
+          link: "/",
         },
         {
-            menu: "About Us",
-            link: "/about"
+          title: "About Us",
+          link: "/about",
         },
         {
-            menu: "Features",
-            link: "/features"
+          title: "Features",
+          link: "/features",
         },
         {
-            menu: "Contact US",
-            link: "/contact"
+          title: "Contact Us",
+          link: "/contact-us",
         },
+      ],
+    },
 
-     ],
-     hero: [
-         {
-             title: "Discover meaningful relationships",
-             subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-         }
-     ]
-
-    
-}
-
+    {
+      title: "Legal",
+      navitems: [
+        {
+          title: "Terms & Condition",
+          link: "/terms",
+        },
+        {
+          title: "Privacy Policy",
+          link: "/privacy-policy",
+        },
+      ],
+    },
+  ],
+  Buttons: [
+    {
+      appLinks: [
+        {
+          title: "App Store",
+          link: "https://www.apple.com/app-store/",
+        },
+        {
+          title: "Play Store",
+          link: "https://play.google.com/store/games?hl=en&gl=US",
+        },
+      ],
+    },
+  ],
+};
 
 export default content;

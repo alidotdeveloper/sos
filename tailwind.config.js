@@ -36,7 +36,8 @@ export default {
         xl: ["var(--xl)"],
         lg: ["var(--lg)"],
         md: ["var(--md)"],
-        sm: ["var(--sm)"]
+        sm: ["var(--sm)"],
+       
       }
     },
   },

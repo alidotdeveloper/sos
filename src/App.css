@@ -1,4 +1,6 @@
+
 * {
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -22,8 +24,11 @@ html {
   --h6: 1.375rem; /*22px */
   --xl: 1.75rem; /*20px */
   --lg: 1rem; /*16px */
+  --h7: 1.125rem; /*18px*/
   --md: 0.875rem; /*14px */
   --sm: 0.75rem; /*12px */
+  --h7: 1.875rem; /*30px/ 
+  
 
   /* Colors */
   --black: #000;
@@ -43,6 +48,7 @@ html {
   --serene-blue: #f4f6fa;
   --silver: #c2c2c2;
   --light-navy:#232846;
+  
 }
 
 @media screen and (max-width: 1023px) {
@@ -69,9 +75,42 @@ html {
     --xl: 1.25rem; /*20px */
     --lg: 1rem; /*16px */
     --md: 0.825rem; /*14px */
-    --sm: 1.75rem; /*12px */
+    --sm: 0.75rem; /*12px */
   }
 }
+.bg-opacity{
+  background-color: #000;
+}
+.contact-bg{
+  background-image: url('./images/contact-banner.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.mobile-contact-bg{
+  background-image: url('./images/bg-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.active{
+  color: var(--red);
+}
+/*shape design */
+
+  .hexagon {
+    height: 100px; 
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background:#FDF3F1;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .hexagon {
+      clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    }
+  }
 
 /*buttons */
 .bg-red-button {
@@ -94,6 +133,9 @@ html {
   -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.1);
 }
+
+
+ 
 .slick-dots li button:before {
   border-bottom: 6px solid gray !important;
 
@@ -121,14 +163,46 @@ html {
 
 @media screen and (max-width: 767px) {
   .slick-dots li.slick-active button:before {
-    width: 40px !important;
+    width: 100px !important;
   }
+  .hexagon {
+    height: 100px; 
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+    background:#FDF3F1;
+  }
+
   .slick-dots {
+    width: 100% !important;
     display: flex !important;
     justify-content:center !important;
   }
 
   .slick-dots li button:before {
-    width: 40px !important;
+    width: 100px !important;
   }
+  .slick-dots{
+    left:7% !important;
+  }
+
 }
+@media screen and (max-width: 467px) {
+  .slick-dots{
+    left:25% !important;
+  }
+  .slick-dots li button:before {
+    width: 50px !important;
+  }
+  .slick-dots li.slick-active button:before {
+    width: 50px !important;
+  }
+  .slick-dots {
+    width: 60% !important;
+   
+  }
+
+}
+
+
+
+
